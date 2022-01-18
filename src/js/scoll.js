@@ -1,0 +1,11 @@
+export {scroll}
+
+function scroll(){
+const { height: cardHeight } = document
+.querySelector('.gallery')
+.firstElementChild.getBoundingClientRect();
+
+window.scrollBy({
+top: cardHeight * 0.5,
+behavior: 'smooth',
+});}
